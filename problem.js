@@ -11,7 +11,15 @@ for (let i = 1; i <= 50; i++) {
 // 1. উপরে এর  এরে  থেকে যেখানে  ৫ টা  ফ্রেন্ড  এর  নাম  এর  মধ্যে   বড়ো  নাম  কোন  ফ্রেন্ড  এর  খুঁজে  বের  করা
 var friends = ["rahim", "karim", "abdul", "sadsd", "heroAlom"];
 
-for (let i = 0; i < friends.length; i++) {}
+let biggerName = [];
+let initialVal = 0;
+for (let i = 0; i < friends.length; i++) {
+  if (friends[i].length > initialVal) {
+    initialVal = friends[i].length;
+    biggerName = friends[i];
+  }
+}
+console.log(biggerName);
 
 //! Task-3
 // 2. উপরের এইয়ারের ভেতর থেকে শুধু জোড় সংখ্যা গুলোকে নিয়ে আরেকটা এরে তৈরি করতে হবে
