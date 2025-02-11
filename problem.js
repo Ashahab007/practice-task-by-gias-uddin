@@ -13,13 +13,15 @@ var friends = ["rahim", "karim", "abdul", "sadsd", "heroAlom"];
 
 let biggerName = [];
 let initialVal = 0;
+
 for (let i = 0; i < friends.length; i++) {
   if (friends[i].length > initialVal) {
     initialVal = friends[i].length;
-    biggerName = friends[i];
+    biggerName = [friends[i]];
   }
 }
 console.log(biggerName);
+console.log(Array.isArray(biggerName));
 
 //! Task-3
 // 2. উপরের এইয়ারের ভেতর থেকে শুধু জোড় সংখ্যা গুলোকে নিয়ে আরেকটা এরে তৈরি করতে হবে
