@@ -26,3 +26,13 @@ console.log(Array.isArray(biggerName));
 //! Task-3
 // 2. উপরের এইয়ারের ভেতর থেকে শুধু জোড় সংখ্যা গুলোকে নিয়ে আরেকটা এরে তৈরি করতে হবে
 var numbers = [1, 2, 3, 3, 4, 4, 5, 6, 7, 8, 9, 10];
+
+let newArr = [];
+for (const number of numbers) {
+  if (number % 2 === 0) {
+    newArr.push(number);
+    // console.log(number);
+  }
+}
+
+console.log(newArr);
