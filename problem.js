@@ -11,8 +11,20 @@ for (let i = 1; i <= 50; i++) {
 // 1. উপরে এর  এরে  থেকে যেখানে  ৫ টা  ফ্রেন্ড  এর  নাম  এর  মধ্যে   বড়ো  নাম  কোন  ফ্রেন্ড  এর  খুঁজে  বের  করা
 var friends = ["rahim", "karim", "abdul", "sadsd", "heroAlom"];
 
+//! Solution 1
 let biggerName = [];
 let initialVal = 0;
+
+for (const friend of friends) {
+  if (friend.length > initialVal) {
+    initialVal = friend.length;
+    biggerName = [friend];
+  }
+}
+
+console.log("Using for of loop", biggerName);
+
+//! Solution 2
 
 for (let i = 0; i < friends.length; i++) {
   if (friends[i].length > initialVal) {
@@ -31,7 +43,6 @@ let newArr = [];
 for (const number of numbers) {
   if (number % 2 === 0) {
     newArr.push(number);
-    // console.log(number);
   }
 }
 
